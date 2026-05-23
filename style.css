@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar {
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: center;
+    margin: 0;
+    padding: 15px 30px;
+    /* Enhanced side padding */
+    justify-content: space-between;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nav_items {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Perfectly centers links list on desktop viewports */
+    padding: 0;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 10px;
+    padding: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+li>a:hover {
+    text-decoration: underline;
+    color: #ff007f;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons>a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.icons>a:hover {
+    transform: scale(1.15);
+    color: #ff007f;
+}
+
+/* Hide the mobile button container on desktop screens by default */
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.mobile-menu-btn .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+/* --- 3. MOBILE RESPONSIVE MEDIA QUERY --- */
+@media (max-width: 768px) {
+
+    /* Hides the long list of nav links safely */
+    #nav_items {
+        display: none;
+    }
+
+    /* Exposes the hamburger icon button exclusively on small viewports */
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    /* Optional: Adjust header padding layout for narrower mobile frames */
+    #nav_bar {
+        padding: 15px 20px;
+    }
+
+    /* Optional: Make restaurant name font size slightly cleaner for mobile scales */
+    #nav_bar h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+#main_content {
+    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&fit=crop&w=1000&h=700");
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: auto;
+        margin-left: 10px;
+        gap: 10px;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+
+        >#title {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: auto;
+            text-align: center;
+
+            white-space: nowrap;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        >#text {
+            color: #f0f0f0;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: auto;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 5px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: auto;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+#about_us {
+    background-color: black;
+    width: 100vw;
+    color: white;
+
+    >h1 {
+        text-align: center;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    >div {
+        display: flex;
+        margin-top: 0;
+
+        >p {
+            margin: auto;
+            text-align: justify;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        >img {
+            margin: auto;
+            text-align: justify;
+            align-items: center;
+            justify-content: center;
+            margin: 5%;
+            width: 40%;
+            height: 40%;
+
+        }
+    }
+}
+
+#menu {
+    background-color: black;
+    width: 100vw;
+    margin-top: 5px;
+
+    >h1 {
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    >p {
+        margin: 5%;
+        padding: 5px;
+    }
+
+    >div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+
+        >div {
+            background-color: black;
+            color: white;
+
+            >div {
+                >div {
+                    >img {
+                        width: 300px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#blogs {
+    background-color: black;
+    margin-top: 5px;
+    width: 100vw;
+}
+
+#gallery {
+    background-color: black;
+    margin-top: 5px;
+    width: 100vw;
+    padding: 10px;
+}
+
+#gallery img {
+    object-fit: cover;
+    border-radius: 8px;
+    gap: 10Px;
+}
+
+.big-img {
+    width: 100%;
+    margin-bottom: 10%;
+    gap: 10px;
+}
+
+.small-img {
+    width: 100%;
+    margin-bottom: 10%;
+    height: auto;
+    gap: 10px;
+}
+
+.mediam-img {
+    width: 100%;
+    margin-bottom: 10%;
+    gap: 10px;
+}
+
+.card:hover {
+    border-color: white;
+    border: solid;
+    box-shadow: 1px 1px 6px rgba(248, 243, 243, 0.969);
+    ;
+}
+
+#find_us {
+    background-color: black;
+    width: 100vw;
+    color: white;
+
+    >div {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        >div {
+            margin: auto;
+
+            #find_us_info {
+                text-align: left;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+        }
+    }
+}
+
+#location {
+    display: flex;
+    margin: 5px;
+
+    >p {
+        margin: 5px;
+    }
+}
+
+.phone {
+    display: flex;
+    margin: 5px;
+
+    >i {
+        margin-top: 15px;
+    }
+
+    >div {
+        display: block;
+
+        >p {
+            margin: 5px;
+        }
+    }
+
+}
+
+#our_team {
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    color: white;
+
+    >img {
+        width: 100px;
+        height: 100px;
+        align-items: start;
+        justify-content: left;
+        margin: auto;
+        margin-left: 15px;
+    }
+
+    >.team {
+        margin-left: auto;
+        margin: 15px;
+
+        >#mail {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    #find_us {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #about_us {
+        display: block;
+
+        >div {
+            display: block;
+
+            >img {
+                width: 100vw;
+                margin: 0;
+            }
+        }
+    }
+}

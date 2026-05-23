@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav id="nav_bar">
+        <h1>Pizza Restaurant</h1>
+        <!-- Changed from ol to ul for semantic accuracy -->
+        <ul id="nav_items">
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#find_us">Find Us</a></li>
+            <li><a href="#our_team">Our Team</a></li>
+        </ul>
+
+        <div class="icons">
+            <!-- Added official site paths securely -->
+            <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"
+                    style="font-size: 28px;"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"
+                    style="font-size: 28px;"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener"><i class="fa fa-whatsapp"
+                    style="font-size: 28px;"></i></a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+    </nav>
+
+    <main id="main_content">
+        <div>
+            <h1 class="title" id="title">Your Perfect Pizza Escape</h1>
+
+            <p id="text" class="text">Welcome to your new favorite pizza escape! We craft every pie with passion, using
+                hand-tossed dough, rich artisanal sauce, and the freshest local ingredients. From the classic bubbling
+                mozzarella to bold gourmet toppings, our wood-fired oven creates the perfect crispy, golden crust every
+                time. Stop by for an unforgettable, mouthwatering slice of happiness today!</p>
+        </div>
+    </main>
+
+    <section id="about_us">
+        <h1 class="title">ABOUT US</h1>
+        <div id="info_about_us">
+            <p class="text">At Neon Crust, we live for the perfect slice. Born out of a passion for bold flavors and
+                late-night hangs, we serve the ultimate wood-fired pizza for the next generation. We combine traditional
+                hand-tossed dough with fresh ingredients to create unforgettable pies made for sharing. Bring your crew
+                and taste our story!</p>
+            <img src="https://images.unsplash.com/photo-1633961382298-25b863514dc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emElMjAxJTNBMXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="img_about_us">
+        </div>
+    </section>
+
+    <section id="menu">
+        <h1 class="title">MENU</h1>
+        <p class="text">Fuel your next hangout with pizzas made for the bold. Every single pie on our menu is built from
+            scratch using our signature 48-hour slow-fermented dough, fired at a blistering 900 degrees for that
+            perfect, smoky char. From timeless classics to hype-worthy flavor combinations, find your new favorite slice
+            below.</p>
+        <div class="cards">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1733259709671-9dbf22bf02cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8fDA%3D"
+                            class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Truffle Shuffle</h5>
+                            <p class="card-text">Wild mushrooms, truffle oil, white garlic sauce, fresh arugula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1661762555601-47d088a26b50?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGl6emF8ZW58MHx8MHx8fDA%3D"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita OG</h5>
+                            <p class="card-text">Classic red sauce, fresh mozzarella, fresh basil, extra virgin olive
+                                oil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1679924471066-dd984e92f395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBpenphfGVufDB8fDB8fHww"
+                            class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepperoni Rush</h5>
+                            <p class="card-text">Double pepperoni, mozzarella, hot honey drizzle, zesty tomato base.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphfGVufDB8fDB8fHww"
+                            class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">BBQ Beast</h5>
+                            <p class="card-text">Grilled chicken, smoky BBQ sauce, red onions, sharp cheddar mix.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://media.istockphoto.com/id/519526540/photo/slice-of-hot-pizza.webp?a=1&b=1&s=612x612&w=0&k=20&c=zvbdjsyttIvzgpvFDylpQLP9erEeEiogF0V2ti2k-gU="
+                            class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Veggie Vibe</h5>
+                            <p class="card-text">Wild mushrooms, truffle oil, white garlic sauce, fresh arugula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1571066811602-716837d681de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpenphfGVufDB8fDB8fHww"
+                            class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Spicy Blaze</h5>
+                            <p class="card-text">Spicy salami, jalapeños, chili flakes, mozzarella, hot marinara.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="blogs">
+        <h1 class="title">BLOGS</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emElMjBzbGljZXxlbnwwfHwwfHx8MA%3D%3D"
+                        class="d-block w-100 h-50" alt="img-1">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://media.istockphoto.com/id/153784617/photo/supreme-pizza-slice-lift.jpg?s=612x612&w=0&k=20&c=Et5uDUJYv3sqDitb1jnUbnGrxhn015foBX_BS-1NFxs="
+                        class="d-block w-100 h-50" alt="img-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1400316691/photo/unrecognizable-woman-taking-a-slice-of-pizza.jpg?s=612x612&w=0&k=20&c=-ztaiKq_nCDVuQPgmrR6mHjc_T8vUmqoG2dK8G1_0SE="
+                        class="d-block w-100 h-50" alt="img-3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/172366884/photo/pepperoni-cheese-pizzas.jpg?s=612x612&w=0&k=20&c=-zbhpu0I55XS8x8ciWTE835Bho_YLgoe3OcrOVhojGQ="
+                        class="d-block w-100 h-50" alt="img-4">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1045841884/photo/fresh-italian-pizza.jpg?s=612x612&w=0&k=20&c=3jg9mV9ZW6Pdt8mV02dGzTkm5j7qp0y7CQtQjyh8Dno="
+                        class="d-block w-100 h-50" alt="img-5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="gallery">
+        <h1 class="title">GALLERY</h1>
+        <div class="row">
+            <!-- Left Big Image -->
+            <div class="col-sm-8">
+                <img src="https://images.unsplash.com/photo-1637438333503-5e218b937aef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBpenphJTIwc2xpY2V8ZW58MHx8MHx8fDA%3D"
+                    alt="Pizza-1" class="big-img">
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.istockphoto.com/id/496546118/photo/slice-of-fresh-italian-classic-original-pepperoni-pizza-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=LC8tQgWAmk1FbP8i1oGB-RV-MFBp9H-1HQMuQBTyQaQ="
+                            alt="Pizza-2" class="small-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.istockphoto.com/id/104259424/photo/eating-a-pizza.jpg?s=612x612&w=0&k=20&c=3Jyz3hLzVw9KsTvsjxajrCanxh-EqYMWiI3mr325b5Y="
+                            alt="Pizza-3" class="small-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.istockphoto.com/id/183778230/photo/lifting-a-slice-of-warm-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=9Z_h6I5_InZJkdYareD6uAE7XKeIqMZzDdRYZHjdoIg="
+                            alt="Pizza-3" class="small-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.istockphoto.com/id/676606672/photo/flatlay-friends-eat-pizza.jpg?s=612x612&w=0&k=20&c=hZZfx6RETQUK-8SXTBJeat_frBTF3LtqNwj0h2rwfbk="
+                            alt="Pizza-4" class="small-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://media.istockphoto.com/id/1083329168/photo/pizza-with-cheese-chicken-and-fresh-tomato-slices-isolated.jpg?s=612x612&w=0&k=20&c=uqqsXWWnVAI74_PKUoN8knPRTYgoO-y3Rai6BERkcpo="
+                            alt="Pizza-5" class="mediam-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emElMjBzbGljZXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Pizza-6" class="mediam-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="find_us">
+        <h1 class="title">FIND US</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="find_us_info">
+                    <p class="text">Grab a slice, vibe out, or lock in your weekend plans with us.
+                    </p>
+                    <div id="location">
+                        <i class="fa fa-map-marker" style="font-size:48px;color:whitesmoke"></i>
+                        <p class="text">Location XYZ, XYZ Colony, Hyderabad.</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone" style="font-size:48px;color:whitesmoke"></i>
+                        <div>
+                            <p class="text">123-456-7890</p>
+                            <p class="text">908-678-4564</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="find_us_img">
+                    <iframe src="https://www.google.com/maps?q=Hyderabad&output=embed" width="100%" height="350" style="border:0; 
+                    border-radius:10px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="our_team">
+        <img src="https://media.istockphoto.com/id/2211428770/vector/serving.webp?a=1&b=1&s=612x612&w=0&k=20&c=_UAphdFaB59gWvGNtfhyZALKxBVs4hRVjxVJr6GvTgY="
+            alt="thanks-img">
+        <div class="team">
+            <div id="mail">
+                <i class="fa fa-envelope" style="font-size:48px"></i>
+                <p class="text">pizza@gmail.com</p>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone" style="font-size:48px;color:whitesmoke"></i>
+                <div>
+                    <p class="text">123-456-7890</p>
+                    <p class="text">908-678-4564</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
