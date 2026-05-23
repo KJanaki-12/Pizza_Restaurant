@@ -7,7 +7,7 @@ This project includes a responsive navbar, hero section, about section, menu, Bo
 
 # 🔗 Live Demo
 
-[View Live Project](https://kjanaki-12.github.com/Pizza_Restaurant)
+[View Live Project](https://kjanaki-12.github.io/Pizza_Restaurant/)
 
 ---
 
